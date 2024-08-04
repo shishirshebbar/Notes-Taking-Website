@@ -1,1 +1,1 @@
-A react notes app.  Features include adding notes,searching nodes and deleting nodes.
+A react notes app.<br/>Features include adding notes,searching nodes and deleting nodes.
