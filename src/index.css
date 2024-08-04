@@ -1,13 +1,119 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+.Note{
+    background-color:MediumSeaGreen;
+    padding:1rem;
+    min-height:150px;
+    border-radius:10px;
+    display:flex;
+    justify-content:space-between;
+    flex-direction:column;
+    white-space:pre-wrap;/*keeps the line spacing which was added to the text*/
+    
+}
+
+.note-footer{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.notes-list{
+    display:grid;
+    grid-gap:1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+}
+
+.container{
+    max-width:10000px;
+    margin-right:auto;
+    margin-left:auto;
+    padding-right:10px;
+    padding-left:10px;
+    min-height: 100vh;
+}
+
+.new-note{
+    background-color:yellow;
+    padding:1rem;
+    min-height:150px;
+    border-radius:10px;
+    display:flex;
+    justify-content:space-between;
+    flex-direction:column;
+    position: relative;
+    
+
+}
+textarea{
+    border:none;
+    resize:none;
+    background-color:yellow;
+
+}
+
+textarea:focus{
+    outline:none;
+}
+
+.submit{
+    background-color:red;
+    border-radius:15px;
+    border:none;
+    padding:5px 10px 5px 10px;
+    position: absolute;
+    right: 10px; /* Adjust the distance from the right edge as needed */
+    bottom: 10px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+   
+}
+
+.submit:hover {
+	background-color: white;
+	cursor: pointer;
+}
+
+.delete{
+    cursor:pointer;
+}
+.search-note{
+    display:flex;
+    align-items:center;
+    background-color:lightgrey;
+    border-radius:10px;
+    padding:5px;
+    margin-bottom:1.5em;
+
+}
+
+.search input{
+    border:none;
+    background-color:lightgrey;
+    width:100%;
+
+}
+
+.search input:focus{
+    outline:none;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+		'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+	font-family: source-code-pro, Menlo, Monaco, Consolas,
+		'Courier New', monospace;
+} */
